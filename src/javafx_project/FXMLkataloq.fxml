@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="520.0" prefWidth="950.0" stylesheets="@caspian.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx_project.FXMLkataloqController">
+    <children>
+        <MenuBar prefHeight="22.0" prefWidth="640.0" VBox.vgrow="NEVER">
+            <menus>
+                <Menu mnemonicParsing="false" text="Fayl">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Yeni" />
+                        <MenuItem mnemonicParsing="false" text="Aç..." />
+                        <MenuItem mnemonicParsing="false" text="Bağla" />
+                        <MenuItem mnemonicParsing="false" text="Saxla" />
+                        <MenuItem mnemonicParsing="false" text="Çıxış" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Redaktə">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Kəs" />
+                        <MenuItem mnemonicParsing="false" text="Kopyala" />
+                        <MenuItem mnemonicParsing="false" text="Köçür" />
+                        <MenuItem mnemonicParsing="false" text="Sil" />
+                        <MenuItem mnemonicParsing="false" text="Hamısını Seç" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Kömək">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Haqqımızda" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+            <children>
+                <Label alignment="CENTER" layoutX="155.0" layoutY="177.0" style="&#10;" text="Drag components from Library here…" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <SplitPane dividerPositions="0.29797979797979796" prefHeight="160.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                            <children>
+                                <TableView fx:id="tableShexsler" fixedCellSize="0.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                    <columns>
+                                        <TableColumn fx:id="sutunAd" prefWidth="92.0" text="AD" />
+                                        <TableColumn fx:id="sutunSoyad" prefWidth="94.0" text="SOYAD" />
+                                    </columns>
+                           <columnResizePolicy>
+                              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                           </columnResizePolicy>
+                                </TableView>
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                            <children>
+                                <TabPane fx:id="tabPaneRehber" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                    <tabs>
+                                        <Tab fx:id="tabShexs" text="İSTİFADƏÇİ">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                    <children>
+                                                        <VBox prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                            <children>
+                                                                <Label text="Istifadəçi Məlumatları">
+                                                                    <font>
+                                                                        <Font name="System Bold" size="16.0" />
+                                                                    </font>
+                                                                    <VBox.margin>
+                                                                        <Insets bottom="20.0" left="20.0" top="10.0" />
+                                                                    </VBox.margin>
+                                                                </Label>
+                                                                <GridPane>
+                                                                    <columnConstraints>
+                                                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="217.0" minWidth="10.0" prefWidth="112.0" />
+                                                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="344.0" minWidth="10.0" prefWidth="333.0" />
+                                                                    </columnConstraints>
+                                                                    <rowConstraints>
+                                                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                                    </rowConstraints>
+                                                                    <children>
+                                                                        <Label text="AD" />
+                                                                        <Label text="SOYAD" GridPane.rowIndex="1" />
+                                                                        <Label text="DOĞUM TARİXİ" GridPane.rowIndex="2" />
+                                                                        <Label text="E-MAİL" GridPane.rowIndex="3" />
+                                                                        <Label text="TELEFON" GridPane.rowIndex="4" />
+                                                                        <Label text="ÜNVAN" GridPane.rowIndex="5" />
+                                                                        <Label text="POÇT KODU" GridPane.rowIndex="6" />
+                                                                        <Label text="ŞƏHƏR" GridPane.rowIndex="7" />
+                                                                        <DatePicker fx:id="istDTarixi" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                                                        <TextField fx:id="istAdi" GridPane.columnIndex="1" />
+                                                                        <TextField fx:id="istSoyadi" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                                                        <TextField fx:id="istEmail" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                                                        <TextField fx:id="istUnvan" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                                                        <TextField fx:id="istPoctKodu" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                                                        <TextField fx:id="istSheher" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                                                                        <TextField fx:id="istTelefon" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                                                    </children>
+                                                                    <padding>
+                                                                        <Insets bottom="20.0" left="10.0" right="10.0" />
+                                                                    </padding>
+                                                                </GridPane>
+                                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                                                    <children>
+                                                                        <Button fx:id="buttonYeni" mnemonicParsing="false" onAction="#buttonYeniAct" prefHeight="25.0" prefWidth="45.0" text="YENİ">
+                                                                            <HBox.margin>
+                                                                                <Insets left="10.0" />
+                                                                            </HBox.margin>
+                                                                        </Button>
+                                                                        <Button fx:id="buttonElave" mnemonicParsing="false" onAction="#buttonElaveAct" prefHeight="25.0" prefWidth="85.0" text="ƏLAVƏ ET">
+                                                                            <HBox.margin>
+                                                                                <Insets left="10.0" />
+                                                                            </HBox.margin>
+                                                                        </Button>
+                                                                        <Button fx:id="buttonGuncelle" mnemonicParsing="false" onAction="#buttonGuncelleAct" prefHeight="25.0" prefWidth="85.0" text="GÜNCƏLLƏ" textAlignment="CENTER">
+                                                                            <HBox.margin>
+                                                                                <Insets left="10.0" />
+                                                                            </HBox.margin>
+                                                                        </Button>
+                                                                        <Button fx:id="buttonSil" mnemonicParsing="false" onAction="#buttonSilAct" prefHeight="25.0" prefWidth="45.0" text="SİL">
+                                                                            <HBox.margin>
+                                                                                <Insets left="10.0" />
+                                                                            </HBox.margin>
+                                                                        </Button>
+                                                                    </children>
+                                                                    <opaqueInsets>
+                                                                        <Insets />
+                                                                    </opaqueInsets>
+                                                                </HBox>
+                                                            </children>
+                                                        </VBox>
+                                                    </children>
+                                                </AnchorPane>
+                                            </content>
+                                        </Tab>
+                                        <Tab fx:id="tabQrafik" text="CƏDVƏL">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                    <children>
+                                                        <BarChart fx:id="barQrafik" layoutX="-100.0" layoutY="-78.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                            <xAxis>
+                                                                <CategoryAxis fx:id="eksAylar" side="BOTTOM" />
+                                                            </xAxis>
+                                                            <yAxis>
+                                                                <NumberAxis side="LEFT" />
+                                                            </yAxis>
+                                                        </BarChart>
+                                                    </children>
+                                                </AnchorPane>
+                                            </content>
+                                        </Tab>
+                                    </tabs>
+                                </TabPane>
+                            </children>
+                        </AnchorPane>
+                    </items>
+                </SplitPane>
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>
